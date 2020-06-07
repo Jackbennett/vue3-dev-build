@@ -1,5 +1,5 @@
 <template>
-  <div v-if="type === 'A'" class="border" id="if-else">
+  <div v-if="view === 'A'" class="border" id="if-else">
     <p class="grey">(grey) if-else blocks</p>
   </div>
   <div v-else class="border" id="if-else">
@@ -8,14 +8,15 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   props: {
     type: String,
   },
   setup(props) {
-    const type = props.type;
+    const view = ref(props.type);
     return {
-      type,
+      view,
     };
   },
 };
