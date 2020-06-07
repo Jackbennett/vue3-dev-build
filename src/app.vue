@@ -17,13 +17,16 @@
 <script>
 import Ifelse from "./ifelse.vue";
 import Expected from "./expected.vue";
-import Multibugged from "./multibugged.vue";
+import Multibugged from "./multiBugged.vue";
 
 export default {
   components: {
     Ifelse,
     Expected,
     Multibugged,
+  },
+  setup() {
+    return {};
   },
 };
 </script>
